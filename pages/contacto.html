@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SoftDevNotes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/logofav.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logofav.pngs">
+    <link rel="shortcut icon" href="../assets/images/logofav.png" type="image/png">
+</head>
+<body>
+
+    <!-- Header: logo + navegación -->
+    <header>
+        <div class="softlogo">
+            <img src="../assets/images/logo (2).png" alt="imagen de logo">
+            <div class="logo">Soft Dev Notes</div>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobre-mi.html">Sobre mí</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./recursos.html">Recursos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page animate">
+        <section>
+            <h1>¡Hablemos!</h1>
+            <p>Tenés una consulta, propuesta o simplemente querés saludar? <br>
+            Completá el formulario y mo pondré en contacto con vos lo antes posible.</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico: </label>
+                    <input type="email" id="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje: </label>
+                    <textarea name="message" id="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>@ 2025 SoftDevNotes. Diseñado con 💻 y ☕ por Emi.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/softdevnotes/">Instagram</a>
+            <a href="https://www.youtube.com/@SoftDevNotes">YouTube</a>
+            <a href="https://ar.pinterest.com/SoftDevNotes/">Pinterest</a>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

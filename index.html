@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog de productividad, organización, frontend, estudio, idiomas. SoftDevNotes">
+    <meta name="author" content="Emi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftDevNotes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logofav.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logofav.pngs">
+    <link rel="shortcut icon" href="./assets/images/logofav.png" type="image/png">
+    
+</head>
+<body>
+
+    <!-- Header: logo + navegación -->
+    <header>
+        <div class="softlogo">
+            <img src="./assets/images/logo (2).png" alt="imagen de logo">
+            <div class="logo">Soft Dev Notes</div>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="./pages/recursos.html">Recursos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Principal: imagen de portada con frase y boton -->
+    <section class="main animate">
+        <div class="main-content">
+            <h1>Organizá tu vida, potenciá tu aprendizaje.</h1>
+            <p>Descubrí tips, recursos y estrategias para estudiar, programar y alcanzar tu metas.</p>
+            <a href="#blog" class="btn">Ir al Blog</a>
+        </div>
+        <div class="main-image">
+            <!-- imagen destacada de escritorio -->
+            <img src="./assets/images/Desk.png" alt="Escritorio de estudio" loading="lazy">
+        </div>
+    </section>
+
+    <!-- seccion destacados: ultimos post del blog -->
+     <section class="destacados animate" id="blog">
+        <h2>Últimos artículos</h2>
+        <div class="posts-grid">
+            <!-- aca puedo usar cards de bootstrap en reemplazo-->
+            <article class="post-card">
+                <img src="./assets/images/DeveloperGirl.png" alt="imagen del post 1">
+                <h3>Titulo del post 1</h3>
+                <p>Mini resumen (max dos lineas)</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+
+            <article class="post-card">
+                <img src="./assets/images/DeveloperGirl.png" alt="imagen del post 2">
+                <h3>titulo del post 2</h3>
+                <p>Mini resumen (max dos lineas)</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+
+            <article class="post-card">
+                <img src="./assets/images/DeveloperGirl.png" alt="imagen del post 3">
+                <h3>titulo del post 3</h3>
+                <p>Mini resumen (max dos lineas)</p>
+                <a href="#" class="read-more">Leer más</a>
+            </article>
+
+        </div>
+     </section>
+
+     <!-- mini seccion sobre mi -->
+     <section class="about-preview animate">
+        <div class="about-content">
+            <img src="" alt="Foto de Emi">
+            <div>
+                <h2>Sobre mí</h2>
+                <!-- rearmar texto de sobre mi -->
+                <p>¡Hola! Soy Emi, amante del cafe, la organizacion bonita ..... </p> 
+                <a href="#sobre-mi" class="btn">Conocer más</a>
+            </div>
+        </div>
+     </section>
+
+     <!-- recursos gratuitos destacados -->
+    <section class="resources">
+      <h2>Recursos gratuitos</h2>
+      <div class="resource-grid">
+        <div class="resource-card">
+            <img src="./assets/images/A4 Paper Planner Mockup Instagram Post.png" alt="Icono Planner">
+            <h3>Planners semanales</h3>
+            <a href="#" class="btn-download">Descargar</a>
+        </div>
+        <div class="resource-card">
+            <img src="./assets/images/A4 Paper Planner Mockup Instagram Post.png" alt="Icono Wallpaper">
+            <h3>Wallpapers motivadores</h3>
+            <a href="#" class="btn-download">Descargar</a>
+        </div>
+        <div class="resource-card">
+            <img src="./assets/images/A4 Paper Planner Mockup Instagram Post.png" alt="Icono Checklist">
+            <h3>Checklist de estudio</h3>
+            <a href="#" class="btn-download">Descargar</a>
+        </div>
+      </div>
+    </section>
+
+<!-- Contenido reciente (YouTube o Pinterest) -->
+ <section class="recent-content">
+    <h2>Últimos contenidos</h2>
+    <div class="content-grid">
+        <iframe src="https://www.youtube.com/watch?v=dhZTNgAs4Fc&list=PLWjXRho-hMusrpdvSqKhqQ4WJMvDVGwyG" frameborder="0" allowfullscreen></iframe>
+    </div>
+ </section>
+
+ <!-- Newsletter: suscirpción -->
+  <section class="newsletter">
+    <h2>Suscribite</h2>
+    <p>Recibí tips, recursos y noticias exclusivas para tu crecimiento personal y profesional.</p>
+    <form action="">
+        <input type="email" placeholder="Tu correo electronico" required>
+        <button type="submit">Suscribirme</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+   <footer>
+        <p>@ 2025 SoftDevNotes. Diseñado con 💻 y ☕ por Emi.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/softdevnotes/">Instagram</a>
+            <a href="https://www.youtube.com/@SoftDevNotes">YouTube</a>
+            <a href="https://ar.pinterest.com/SoftDevNotes/">Pinterest</a>
+        </div>
+    </footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

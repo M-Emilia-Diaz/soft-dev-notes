@@ -64,7 +64,7 @@ header {
 }
 
 .softlogo img {
-    width: 120px;
+    width: 180px;
 }
 
 .logo {
@@ -73,19 +73,64 @@ header {
     color: var(--color-oat-milk);
 }
 
+.navbar {
+    all: unset; /* Quita estilos heredados */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--color-bg-espresso);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* body {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+.navbar, 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-} a {
+    padding: 0;
+    margin: 0;
+} 
+.container-fluid {
+    background-color: var(--color-bg-espresso);
+}
+
+.navbar, 
+.nav-links a {
     text-decoration: none;
     color: var(--color-oat-milk);
     font-weight: 500;
     transition: color 0.3s;
 }
 
+.navbar, 
 .nav-links a:hover {
     color: var(--color-copper-alt);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.nav-link.active {
+    color: var(--color-oat-milk) !important;
+}
+
+.nav-link.active:hover {
+    color: var(--color-copper-alt) !important;
 }
 
 /* main */
@@ -102,7 +147,7 @@ header {
 }
 
 .main-content {
-    max-width: 50%;
+    max-width: 100%;
 } h1 {
     font-size: 2.8rem;
     margin-bottom: 30px;
@@ -144,6 +189,10 @@ header {
 /* cards */
 .post-card,
 .resource-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     background-color: var(--color-beige-latte);
     color: var(--color-text-main);
     border-radius: 15px;
@@ -151,10 +200,14 @@ header {
     overflow: hidden;
     transition: transform 0.3s;
     text-align: center;
+    
 }
 
 .main-image img {
-    width: 700px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
     border-radius: 20px;
 }
 
@@ -177,14 +230,23 @@ header {
 
 .post-card img {
     width: 100%; 
-    height: 180px;
+    height: auto;
     object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    
 } p {
     margin: 0 20px 20px;
     font-size: 0.95rem;
 }
 
-
+.card-img-top {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
 
 .read-more {
     display: block;
@@ -210,8 +272,9 @@ header {
 }
 
 .about-preview img {
-    width: 250px;
-    border-radius: 50%;
+    width: 500px;
+    height: 100%;
+    border-radius: 10%;
     object-fit: cover;
 }
 
@@ -244,7 +307,11 @@ header {
 
 .resource-card img {
     width: 100%; 
-    object-fit: contain;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .resource-card h3 {
@@ -380,10 +447,10 @@ footer {
 /* Blog y articulos */
 
 
-.posts-grid img {
+/* .posts-grid img {
     width: 100%; 
     object-fit: cover;
-}
+} */
 
 .blog-cards {
     border-radius: 15px;
@@ -391,7 +458,17 @@ footer {
     overflow: hidden;
     transition: transform 0.3s;
     text-align: center;
+ } img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 0; 
 }
+
+ 
 
 /* sobre mi */
 .about-page,
@@ -523,3 +600,54 @@ textarea {
 textarea {
     resize: vertical;
 }
+
+.desk-diarie {
+    padding: 80px 10%;
+    background-color: var(--color-oat-milk);
+    color: var(--color-text-main);
+    min-height: 100vh;
+    line-height: 1.8;
+} h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: var(--color-bg-espresso);
+    text-align: center;
+} p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.diarie-entry {
+    background-color: var(--color-beige-latte);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-soft);
+    margin: 50px;
+    max-width: 800px;
+} h2 {
+    font-size: 1.8rem;
+    color: var(--color-bg-roasted);
+    margin-bottom: 10px;
+} .date {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    display: block;
+} p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: left;
+} 
+.diarie-entry img{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
